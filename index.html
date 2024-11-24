@@ -5,6 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Digital Agency UpLabs</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="./css/slider.css">
     <link rel="shortcut icon" href="./rasmlar/LOGO.svg" type="image/x-icon">
     <link
         href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
@@ -14,25 +16,24 @@
 </head>
 
 <body>
-
-    <header id="home">
-        <nav>
-            <div class="container">
-                <div class=" navbar">
-                    <a href="./index.html"><img src="./rasmlar/LOGO.svg" alt="WEB-Logo"></a>
-                    <ul class="nav-links" id="navLinks">
-                        <span class="close-icon" onclick="toggleMenu()">✖</span>
-                        <li><a href="#home" onclick="toggleMenu()">Home</a></li>
-                        <li><a href="#section1" onclick="toggleMenu()">About</a></li>
-                        <li><a href="#section2" onclick="toggleMenu()">Services</a></li>
-                        <li><a href="#section3" onclick="toggleMenu()">Reviews</a></li>
-                    </ul>
-                    <div class="menu-icon" onclick="toggleMenu()">☰</div>
-                    <button>Get Started</button>
-                </div>
+    <nav>
+        <div class="container">
+            <div class=" navbar">
+                <a href="./index.html"><img src="./rasmlar/LOGO.svg" alt="WEB-Logo"></a>
+                <ul class="nav-links" id="navLinks">
+                    <span class="close-icon" onclick="toggleMenu()">✖</span>
+                    <li><a href="#home" onclick="toggleMenu()">Home</a></li>
+                    <li><a href="#section1" onclick="toggleMenu()">About</a></li>
+                    <li><a href="#section2" onclick="toggleMenu()">Services</a></li>
+                    <li><a href="#section3" onclick="toggleMenu()">Reviews</a></li>
+                </ul>
+                <div class="menu-icon" onclick="toggleMenu()">☰</div>
+                <button>Get Started</button>
             </div>
+        </div>
 
-        </nav>
+    </nav>
+    <header id="home">
         <div class="header-main container">
             <div class="header-main-item">
                 <h2>Smart Business</h2>
@@ -98,6 +99,8 @@
 
         <!-- ---------------------------------------------------------------------------------------------------------- -->
 
+
+
         <section id="section3" class="container section3">
             <div class="carousel-container">
                 <h2 class="carousel-title">
@@ -107,82 +110,87 @@
                         <button id="nextBtn" class="carousel-nav"><img src="./iconlar/arrow_right.png" alt=""></button>
                     </div>
                 </h2>
-                <div class="carousel">
-                    <div class="carousel-item">
-                        <div class="section3-item">
-                            <div class="section3-text">
-                                <img src="./rasmlar/avatar1.png" alt="profile Photo">
-                            </div>
-                            <div class="section3-text">
-                                <p>I recently concluded a complete messaging revamp for an exciting com</p>
-                                <b>--- Leo Aminoff</b>
-                                <span>Product Designer</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                        <div class="section3-item">
-                            <div class="section3-text">
-                                <img src="./rasmlar/avatar2.png" alt="profile Photo">
-                            </div>
-                            <div class="section3-text">
-                                <p>I recently concluded a complete messaging revamp for an exciting com</p>
-                                <b>--- Carla Dias</b>
-                                <span>Product Designer</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                        <div class="section3-item">
-                            <div class="section3-text">
-                                <img src="./rasmlar/avatar1.png" alt="profile Photo">
-                            </div>
-                            <div class="section3-text">
-                                <p>I recently concluded a complete messaging revamp for an exciting com</p>
-                                <b>--- Leo Aminoff</b>
-                                <span>Product Designer</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                        <div class="section3-item">
-                            <div class="section3-text">
-                                <img src="./rasmlar/avatar1.png" alt="profile Photo">
-                            </div>
-                            <div class="section3-text">
-                                <p>I recently concluded a complete messaging revamp for an exciting com</p>
-                                <b>--- Leo Aminoff</b>
-                                <span>Product Designer</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                        <div class="section3-item">
-                            <div class="section3-text">
-                                <img src="./rasmlar/avatar1.png" alt="profile Photo">
-                            </div>
-                            <div class="section3-text">
-                                <p>I recently concluded a complete messaging revamp for an exciting com</p>
-                                <b>--- Leo Aminoff</b>
-                                <span>Product Designer</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                        <div class="section3-item">
-                            <div class="section3-text">
-                                <img src="./rasmlar/avatar1.png" alt="profile Photo">
-                            </div>
-                            <div class="section3-text">
-                                <p>I recently concluded a complete messaging revamp for an exciting com</p>
-                                <b>--- Leo Aminoff</b>
-                                <span>Product Designer</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
             </div>
         </section>
+        <div class="swiper mySwiper container">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="sw-card">
+                    <div class="sw-img">
+                        <img src="./rasmlar/avatar1.png" alt="profile Photo">
+                    </div>
+                    <div class="sw-text">
+                        <p>I recently concluded a complete messaging revamp for an exciting com</p>
+                        <b>--- Leo Aminoff</b>
+                        <span>Product Designer</span>
+                    </div>
+                </div>
+              </div>
+              
+              <div class="swiper-slide">
+                <div class="sw-card">
+                    <div class="sw-img">
+                        <img src="./rasmlar/avatar2.png" alt="profile Photo">
+                    </div>
+                    <div class="sw-text">
+                        <p>I recently concluded a complete messaging revamp for an exciting com</p>
+                        <b>--- Carla Dias</b>
+                        <span>Product Designer</span>
+                    </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="sw-card">
+                    <div class="sw-img">
+                        <img src="./rasmlar/avatar1.png" alt="profile Photo">
+                    </div>
+                    <div class="sw-text">
+                        <p>I recently concluded a complete messaging revamp for an exciting com</p>
+                        <b>--- Leo Aminoff</b>
+                        <span>Product Designer</span>
+                    </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="sw-card">
+                    <div class="sw-img">
+                        <img src="./rasmlar/avatar1.png" alt="profile Photo">
+                    </div>
+                    <div class="sw-text">
+                        <p>I recently concluded a complete messaging revamp for an exciting com</p>
+                        <b>--- Leo Aminoff</b>
+                        <span>Product Designer</span>
+                    </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="sw-card">
+                    <div class="sw-img">
+                        <img src="./rasmlar/avatar1.png" alt="profile Photo">
+                    </div>
+                    <div class="sw-text">
+                        <p>I recently concluded a complete messaging revamp for an exciting com</p>
+                        <b>--- Leo Aminoff</b>
+                        <span>Product Designer</span>
+                    </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="sw-card">
+                    <div class="sw-img">
+                        <img src="./rasmlar/avatar1.png" alt="profile Photo">
+                    </div>
+                    <div class="sw-text">
+                        <p>I recently concluded a complete messaging revamp for an exciting com</p>
+                        <b>--- Leo Aminoff</b>
+                        <span>Product Designer</span>
+                    </div>
+                </div>
+              </div>
+              
+            </div>
+            
+          </div>
     </main>
 
 
@@ -248,7 +256,37 @@
         </div>
     </footer>
 
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+  <!-- Initialize Swiper -->
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+      slidesPerView: 1,
+      spaceBetween: 30,
+      autoplay: {
+        delay: 2500,
+        disableOnInteraction: false,
+      },
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+      breakpoints: {
+    900:{
+    slidesPerView: 1.5, spaceBetween: 20,
+    },
+    1200: {
+    slidesPerView: 2, spaceBetween: 50,
+    },
+    1400: {
+    slidesPerView: 2.5, spaceBetween: 50,
+    },}
+    });
+    
+  </script>
     <script src="./js/script.js"></script>
+    
 </body>
 
 </html>
